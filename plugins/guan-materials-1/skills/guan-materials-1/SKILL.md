@@ -13,17 +13,24 @@ Choose one route and skip irrelevant steps:
 
 | User input | Action |
 |---|---|
-| Topic only | Discover and classify literature. |
+| Topic only | Complete the mandatory resource preflight before discovery. |
 | Titles, DOIs, or a reference list | Verify metadata and classify; search only for missing metadata or full text. |
 | PDF(s) | Skip discovery/download and analyze directly. |
 
-For topic-only discovery, obtain only the minimum context:
+### Mandatory Resource Preflight For Topic-Only Requests
 
-1. research objective: proposal, experiment design, review, thesis, or another stated output;
-2. institutional library/resource portal URL and current browser login state, if full-text retrieval is wanted;
-3. project folder only when a download destination is needed.
+Before any literature search, candidate-paper list, topic recommendation, innovation audit, or proposal conclusion, ask for and record all four items below in one compact request:
 
-Detect browser-control capability from the current environment. If authorized browser control and a logged-in institutional session are available, download only lawful open-access or institution-authorized full text. If not, return verified title, DOI, publisher/database route, and library search path for manual download. Do not request credentials, OTPs, cookies, or session files. Do not mass-download; present candidates first and use small confirmed batches.
+1. intended output: proposal, experiment design, review, thesis, or another stated output;
+2. institutional library portal and available databases;
+3. whether an authorized browser session is currently logged in;
+4. whether local PDFs, a reference list, a Zotero/EndNote library, or a project folder already contains papers.
+
+Treat the preflight as complete only when the objective, access status, and existing-literature status are known. `No institutional access`, `not logged in`, and `no local papers` are valid recorded statuses. Do not search, return candidate records, recommend a topic, or make novelty/mechanism claims while any status is unknown.
+
+If local PDFs or a reference library exist, inspect and classify them first. If authorized institutional access exists, search that route before public metadata. Use public metadata only for DOI verification, open-access discovery, or gaps not covered by the local/authorized sources. If the user cannot provide a resource route, state the public-metadata-only limitation and obtain explicit permission before proceeding.
+
+For a topic-only request that already states its objective, ask only for the remaining preflight items in the first response. Do not search in that same response. Detect browser-control capability only after preflight. If authorized browser control and a logged-in institutional session are available, download only lawful open-access or institution-authorized full text. If not, return verified title, DOI, publisher/database route, and library search path for manual download. Do not request credentials, OTPs, cookies, or session files. Do not mass-download; present candidates first and use small confirmed batches.
 
 ## 2. Build A Domain-Adaptive Search Strategy
 
@@ -46,6 +53,8 @@ Create a query family rather than one broad keyword string:
 Use title/abstract/keyword fields whenever a database supports them. Search the user's authorized library databases first. Use structured public metadata for DOI verification and open-access discovery, not as the only source of a precision search. Select databases by field: use Web of Science, Scopus, publisher databases, CNKI, Wanfang, PubMed, or preprint sources only when appropriate to the topic and the user's access.
 
 ## 3. Run Two Retrieval Passes
+
+Before starting Pass A, self-check: `Did I complete or receive an explicit waiver for the topic-only resource preflight?` If not, stop and ask the unresolved preflight questions. Label any preflight-incomplete work `not started`; never label it as candidate literature or proposal evidence.
 
 ### Pass A: Recall
 
