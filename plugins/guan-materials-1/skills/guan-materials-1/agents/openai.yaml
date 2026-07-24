@@ -1,0 +1,7 @@
+interface:
+  display_name: "Guan-Materials-1"
+  short_description: "Find, read, audit, and archive materials literature."
+  default_prompt: "Use $guan-materials-1 to find and analyze literature for my materials research topic."
+
+policy:
+  allow_implicit_invocation: true
