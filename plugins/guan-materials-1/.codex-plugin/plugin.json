@@ -1,0 +1,18 @@
+{
+  "name": "guan-materials-1",
+  "version": "0.1.0",
+  "description": "A domain-adaptive materials literature workflow for discovery, assistant-led reading, novelty auditing, and evidence archiving.",
+  "author": {
+    "name": "Guan Materials 1 contributors"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Guan-Materials-1",
+    "shortDescription": "Find, read, audit, and archive materials literature.",
+    "longDescription": "A domain-adaptive workflow for materials literature discovery, assistant-led full-paper interpretation, novelty auditing, optional figure capture, and evidence archives split every 50 papers.",
+    "developerName": "Guan Materials 1 contributors",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Use $guan-materials-1 to find and analyze literature for my materials research topic."
+  }
+}
